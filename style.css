@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(48, 48, 48);
+}
+
+main {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    /* align-items: center;
+    justify-items: center;
+    justify-content: center; */
+}
+
+.buttons-texts {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+        "Grid-1 Grid-1 Grid-3 Grid-2 Grid-2"
+        "Grid-4 Grid-4 Grid-4 Grid-4 Grid-4"
+        "Grid-5 Grid-5 Grid-5 Grid-5 Grid-5";
+}
+
+.Grid-1 { 
+    grid-area: Grid-1; 
+}
+
+.Grid-2 {
+    grid-area: Grid-2;
+}
+
+.Grid-3 {
+    grid-area: Grid-3;
+}
+
+.Grid-4 {
+    grid-area: Grid-4;
+}
+
+.Grid-5 {
+    grid-area: Grid-5;
+}
+
+.button-text {
+    position: relative;
+    display: flex;
+    padding: 8px;
+    margin: 0;
+    flex-direction: column;
+    row-gap: 10px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(18, 15, 15);
+}
+
+.button-text button {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    width: fit-content;
+    font-size: 20px;
+    cursor: pointer;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(240, 171, 60);
+    color: rgb(255, 255, 255);
+}
+
+.button-text p {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+}
